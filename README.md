@@ -38,10 +38,10 @@
 ## Dataset
 * The foreman image sequences will serve as examples to my project.  
 * The compression results below are based on the foreman image [sequences](./sequences).  
- ![foreman0020](./foreman0020.bmp)![foreman0029](./sequences/foreman20_40_RGB/foreman0029.bmp)![foreman0039](./sequences/foreman20_40_RGB/foreman0039.bmp)
+ ![foreman0020](./foreman0020.bmp)![foreman0029](./sequences/foreman20_40_RGB/foreman0029.bmp)![foreman0039](./sequences/foreman20_40_RGB/foreman0039.bmp)  
 
 ## Motion Compensation
-* The [first image](./foreman0020.bmp) in sequences is compressed and restored according to the [JPEG](./JPEG1.m) standard. And add [Deblocking filter](./deblocking_filter.m) to remove the block effect after image restoration.
+* The [first image](./foreman0020.bmp) in sequences is compressed and restored according to the [JPEG](./JPEG1.m) standard. And add [Deblocking filter](./deblocking_filter.m) to remove the block effect after image restoration.  
  ![JPEG](./JPEG.png)[1]
 * The [first image](./foreman0020.bmp) will be used as a reference for the [second image](./sequences/foreman20_40_RGB/foreman0021.bmp) to obtain Motion vectors (```motion_vectors2```)between the two images.
 ```
