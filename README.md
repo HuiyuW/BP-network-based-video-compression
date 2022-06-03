@@ -21,7 +21,7 @@
   ├── [Optimization1.m](./Optimization1.m): Deblockling Quantization Table and Deblocking filter in Baseline JPEG  
   ├── [Optimization2.m](./Optimization2.m): Image Compression Based on BP Neural Network  
   ├── [sequences](./sequences): Test Image Sequences  
-  ├── [JPEG1.m](./JPEG1.m): Use the JPEG method to compress the image and get the ```data_len```.  
+  ├── [JPEG1.m](./JPEG1.m): Use the JPEG standard to compress the image.  
   ├── [BPNN2.m](./BPNN2.m): Compress Images using BP neural network.  
   ├── [deblocking_filter.m](./deblocking_filter.m): Compress Images using BP neural network.  
   ├── [chapter4.mat](./chapter4.mat): Save RD-Curve of chapter4 in mat form.  
@@ -71,7 +71,7 @@
 ## BP network Optimization
 * Based on [Optimization1](./Optimization1.m), the [JPEG](./JPEG1.m) standard is improved. [BP](./BPNN2.m) is introduced as a method for compressing and restoring images.  
 ```
-  [image_rec,bit] = BPNN2(image_YCbCr{1},4,8);
+  [image_rec,bit] = BPNN2(image_YCbCr{1},4,8); [3]
 ```
 * Because the number of hidden layers of the neural network is smaller than the number of input layers, the image compression can be achieved by saving the hidden layer weights and hidden layer outputs.  
 ![BPNN](./BPNN.png)[2]![BPNN2](./BPNN2.png)
@@ -90,3 +90,4 @@
 ## Copyright
 * [1][Fu Q, Jiang B, Wang C Y, et al. A Novel Deblocking Quantization Table for Luminance Component in Baseline JPEG[J]. J. Commun., 2015, 10(8): 629-637](http://www.jocm.us/uploadfile/2015/0824/20150824112248702.pdf)
 * [2][刘光宇,曹禹,黄懿,曾志勇,赵恩铭,邢传玺.基于BP神经网络结构的图像压缩技术研究[J].牡丹江师范学院学报(自然科学版),2021(02):23-29.](https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2021&filename=MDJZ202102007&uniplatform=NZKPT&v=AifrAVbP0ayPVJ83VzR-QpNuDqG54t-n1tFnbqnaom17tJBVvO4oBrT-5qbD2nPS)
+* [3][MATLAB实现基于BP神经网络的图像压缩](https://blog.csdn.net/yitian_z/article/details/103099568)
